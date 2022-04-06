@@ -183,6 +183,15 @@ export class VHCalendar extends LitElement {
         }
       }
 
+	  @container (inline-size > 1600px) {
+		.calendar__day:hover {
+			color: white;
+			background-image: linear-gradient(45deg, #000000 16.67%, #ffffff 16.67%, #ffffff 50%, #000000 50%, #000000 66.67%, #ffffff 66.67%, #ffffff 100%);
+			background-size: 10px 10px;
+			text-shadow: 0 0 3px #000000;
+		}
+      }
+
       @container (inline-size < 300px) {
         // the narrow view
         table {
@@ -227,6 +236,8 @@ export class VHCalendar extends LitElement {
 		tr:nth-child(1) .calendar__day:nth-child(1) {
 			border-top: 1px solid black;
 		}
+
+
 
 		.calendar__day--active .daycount {
 			background: inherit;
