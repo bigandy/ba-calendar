@@ -16,7 +16,7 @@ export class VHCalendar extends LitElement {
   static get styles() {
     return css`
       :host {
-        --orange: #ff3c00;
+        --orange: var(--brand, #ff3c00);
       }
 
       .wrapper {
@@ -25,7 +25,8 @@ export class VHCalendar extends LitElement {
       }
 
       .day {
-		  display: none
+
+		  display: none;
       }
 
       table {
@@ -51,7 +52,7 @@ export class VHCalendar extends LitElement {
 
       .calendar--current .calendar__month,
       .calendar--current .calendar__year {
-        color: #ff3c00;
+        color: var(--orange);
       }
 
       .calendar__month {
@@ -235,6 +236,7 @@ export class VHCalendar extends LitElement {
 		.day {
 			all: unset;
 			padding: 1em;
+			color: var(--brand);
 		}
       }
     `;
@@ -324,7 +326,6 @@ export class VHCalendar extends LitElement {
       (letter) => html`<span>${letter}</span>`
     );
 
-    console.log({ monthSpread });
     return html`<header>
 	<div>
 		<h1 class="calendar__month">${monthSpread}</h1>

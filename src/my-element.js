@@ -1,6 +1,6 @@
 import { html, css, LitElement } from 'lit'
 
-import "./style.css";
+
 
 /**
  * An example element.

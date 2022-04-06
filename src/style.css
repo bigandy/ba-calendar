@@ -10,3 +10,13 @@ main {
 	grid-template-columns: 30% 70%;
 	column-gap: 1rem;
 }
+
+/* // styles don't leak in */
+td {
+	background: red;
+	color: red;
+}
+
+footer vh-calendar {
+	--brand: purple;
+}
