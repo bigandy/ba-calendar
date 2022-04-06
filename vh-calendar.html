@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>VH Calendar</title>
+	<script type="module" src="/src/vh-calendar.js"></script>
+</head>
+
+<body>
+	<div class="warning">
+		<p>Your browser does not currently support @container queries.</p>
+	</div>
+
+	<div class="wrapper">
+		<main>
+			<section>
+				<vh-calendar></vh-calendar>
+			</section>
+
+			<aside>
+				<vh-calendar offset="3" style="--brand: cyan"></vh-calendar>
+			</aside>
+		</main>
+
+		<footer>
+			<vh-calendar offset="7"></vh-calendar>
+		</footer>
+	</div>
+
+</body>
+
+</html>

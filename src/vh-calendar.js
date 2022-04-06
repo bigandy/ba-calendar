@@ -333,6 +333,7 @@ export class VHCalendar extends LitElement {
   header() {
     const { month, year } = this.getMonth(this.offset);
 
+    // wrap a span around each letter
     const monthSpread = [...month].map(
       (letter) => html`<span>${letter}</span>`
     );
