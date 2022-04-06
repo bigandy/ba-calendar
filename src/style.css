@@ -26,8 +26,8 @@ main {
 	outline: solid 1px lightgrey;
 
 	// ENABLE THESE
-	container-type: inline-size;
-	container-name: wrapper;
+	/* container-type: inline-size;
+	container-name: wrapper; */
 }
 
 // ENABLE THESE
