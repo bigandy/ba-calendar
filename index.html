@@ -2,27 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index</title>
-  <script type="module" src="/src/vh-calendar.js"></script>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>VH Calendar</title>
+	<script type="module" src="/src/vh-calendar.js"></script>
 </head>
 
 <body>
+	<div class="warning">
+		<p>Your browser does not currently support @container queries. Try Safari Tech Preview, or Chrome Canary with
+			the Experimental Web Platform features
+			flag enabled</p>
+	</div>
 
-  <h1>Welcome</h1>
+	<div class="wrapper">
+		<main>
+			<section>
+				<vh-calendar></vh-calendar>
+			</section>
 
-  <ol>
-    <li><a href="/web-component.html">Create a Web component</a></li>
-    <li><a href="/container-queries.html">Demonstrate @container Queries</a></li>
-    <li><a href="/vh-calendar.html">Demo combo</a></li>
-  </ol>
+			<aside>
+				<vh-calendar offset="3" style="--brand: cyan"></vh-calendar>
+			</aside>
+		</main>
 
-
-
-
-
+		<footer>
+			<vh-calendar offset="7"></vh-calendar>
+		</footer>
+	</div>
 </body>
 
 </html>
