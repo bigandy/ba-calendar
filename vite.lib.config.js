@@ -9,8 +9,8 @@ export default defineConfig({
       formats: ['es'],
       name: 'Ba Calendar',
     },
-    rollupOptions: {
-      external: /^lit/
-    }
+    // rollupOptions: {
+    //   external: /^lit/
+    // }
   }
 })
