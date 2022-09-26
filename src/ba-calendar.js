@@ -4,11 +4,8 @@ import { html, css, LitElement } from "lit";
 
 /**
  * An ba-calendar element.
- *
- * @slot - This element has a slot
- * @csspart button - The button
  */
-export class VHCalendar extends LitElement {
+export class BACalendar extends LitElement {
   static get styles() {
     return css`
       :host {
@@ -480,24 +477,14 @@ export class VHCalendar extends LitElement {
     </div>`;
   }
 
-  outputTable(offset) {
-    const {
-      month,
-      year,
-      daysInMonth,
-      firstDayofMonth,
-      todayDay,
-    } = this.getMonth(offset);
-    const currentClass =
-      offset === 0 ? "calendar--current" : "";
-
+  outputTable() {
     return html` ${this.table()} `;
   }
 
   render() {
     return html`
       <div class="wrapper">
-        ${this.outputTable(this.offset)}
+        ${this.outputTable()}
       </div>
     `;
   }
@@ -513,4 +500,4 @@ export class VHCalendar extends LitElement {
   }
 }
 
-customElements.define("ba-calendar", VHCalendar);
+customElements.define("ba-calendar", BACalendar);
