@@ -2,10 +2,8 @@ import dayjs from "dayjs";
 
 import { html, css, LitElement } from "lit";
 
-import "./style.css";
-
 /**
- * An example element.
+ * An ba-calendar element.
  *
  * @slot - This element has a slot
  * @csspart button - The button

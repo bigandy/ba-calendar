@@ -1,10 +1,4 @@
-import dayjs from "dayjs";
-
 import { html, css, LitElement } from "lit";
-import { classMap } from "lit/directives/class-map.js";
-import { customElement, property } from "lit/decorators.js";
-
-import { live } from "lit/directives/live.js";
 
 import "./style.css";
 
