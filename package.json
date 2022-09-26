@@ -1,6 +1,6 @@
 {
   "name": "ba-calendar",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/ba-calendar.es.js",
   "module": "./lib/ba-calendar.es.js",
   "exports": {
