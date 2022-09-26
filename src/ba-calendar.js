@@ -513,6 +513,4 @@ export class VHCalendar extends LitElement {
   }
 }
 
-// window.customElements.define('vh-calendar', VHCalendar)
-
-customElements.define("vh-calendar", VHCalendar);
+customElements.define("ba-calendar", VHCalendar);

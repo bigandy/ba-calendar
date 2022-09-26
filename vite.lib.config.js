@@ -5,7 +5,7 @@ export default defineConfig({
   build: {
     outDir: "lib",
     lib: {
-      entry: 'src/vh-calendar.js',
+      entry: 'src/ba-calendar.js',
       formats: ['es'],
       name: 'Ba Calendar',
     },
