@@ -23,8 +23,7 @@ main {
   resize: horizontal;
   padding: 1rem;
   margin: 2rem auto 0;
-  outline: solid 1px lightgrey;
-
+  outline: dashed 1px lightgrey;
   container-type: inline-size;
   container-name: wrapper;
 }
@@ -32,15 +31,7 @@ main {
 @container wrapper (inline-size < 768px) {
   main {
     grid-template-columns: 1fr;
-
-    background: rgba(255, 0, 0, 0.1);
   }
-}
-
-/* // styles don't leak in */
-td {
-  background: red;
-  color: red;
 }
 
 footer vh-calendar {
