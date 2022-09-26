@@ -1,8 +1,6 @@
 import dayjs from "dayjs";
 
 import { html, css, LitElement } from "lit";
-import { classMap } from "lit/directives/class-map.js";
-import { customElement, property } from "lit/decorators.js";
 
 import "./style.css";
 
@@ -25,8 +23,7 @@ export class VHCalendar extends LitElement {
       }
 
       .day {
-
-		  display: none;
+        display: none;
       }
 
       table {
@@ -136,7 +133,7 @@ export class VHCalendar extends LitElement {
         cursor: pointer;
       }
 
-	  .day,
+      .day,
       .vh {
         border: 0;
         clip: rect(0 0 0 0);
@@ -183,13 +180,22 @@ export class VHCalendar extends LitElement {
         }
       }
 
-	  @container (inline-size > 1600px) {
-		.calendar__day:hover {
-			color: white;
-			background-image: linear-gradient(45deg, #000000 16.67%, #ffffff 16.67%, #ffffff 50%, #000000 50%, #000000 66.67%, #ffffff 66.67%, #ffffff 100%);
-			background-size: 10px 10px;
-			text-shadow: 0 0 3px #000000;
-		}
+      @container (inline-size > 1600px) {
+        .calendar__day:hover {
+          color: white;
+          background-image: linear-gradient(
+            45deg,
+            #000000 16.67%,
+            #ffffff 16.67%,
+            #ffffff 50%,
+            #000000 50%,
+            #000000 66.67%,
+            #ffffff 66.67%,
+            #ffffff 100%
+          );
+          background-size: 10px 10px;
+          text-shadow: 0 0 3px #000000;
+        }
       }
 
       @container (inline-size < 300px) {
@@ -228,27 +234,25 @@ export class VHCalendar extends LitElement {
           width: 100%;
         }
 
-		td.calendar__day {
-			display: grid;
-			grid-template-columns: 5fr 6fr;
-		}
+        td.calendar__day {
+          display: grid;
+          grid-template-columns: 5fr 6fr;
+        }
 
-		tr:nth-child(1) .calendar__day:nth-child(1) {
-			border-top: 1px solid black;
-		}
+        tr:nth-child(1) .calendar__day:nth-child(1) {
+          border-top: 1px solid black;
+        }
 
+        .calendar__day--active .daycount {
+          background: inherit;
+          color: inherit;
+        }
 
-
-		.calendar__day--active .daycount {
-			background: inherit;
-			color: inherit;
-		}
-
-		.day {
-			all: unset;
-			padding: 1em;
-			color: var(--brand);
-		}
+        .day {
+          all: unset;
+          padding: 1em;
+          color: var(--brand);
+        }
       }
     `;
   }

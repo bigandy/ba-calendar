@@ -1,65 +1,63 @@
 body {
-	min-height: 100vh;
+  min-height: 100vh;
 
-	/* justify-content: center; */
+  /* justify-content: center; */
 }
 
 main {
-	display: grid;
+  display: grid;
 
-	grid-template-columns: 30% 70%;
-	column-gap: 1rem;
+  grid-template-columns: 30% 70%;
+  column-gap: 1rem;
 }
 
 @media (max-width: 768px) {
-	main {
-		grid-template-columns: 1fr;
-	}
+  main {
+    grid-template-columns: 1fr;
+  }
 }
 
 .wrapper {
-	contain: layout inline-size style;
-	overflow: hidden;
-	resize: horizontal;
-	padding: 1rem;
-	margin: 2rem auto 0;
-	outline: solid 1px lightgrey;
+  contain: layout inline-size style;
+  overflow: hidden;
+  resize: horizontal;
+  padding: 1rem;
+  margin: 2rem auto 0;
+  outline: solid 1px lightgrey;
 
-	// ENABLE THESE
-	/* container-type: inline-size;
-	container-name: wrapper; */
+  container-type: inline-size;
+  container-name: wrapper;
 }
 
-// ENABLE THESE
-/* @container wrapper (inline-size < 768px) {
-	main {
-		grid-template-columns: 1fr;
+@container wrapper (inline-size < 768px) {
+  main {
+    grid-template-columns: 1fr;
 
-		background: rgba(255,0,0,0.1);
-	}
-} */
+    background: rgba(255, 0, 0, 0.1);
+  }
+}
 
 /* // styles don't leak in */
 td {
-	background: red;
-	color: red;
+  background: red;
+  color: red;
 }
 
 footer vh-calendar {
-	--brand: purple;
+  --brand: purple;
 }
 
 .warning {
-	color: red;
-	text-align: center;
-	border: 1rem double red;
-	margin-inline: auto;
-	margin-block: 3rem 0;
-	max-width: 700px;
+  color: red;
+  text-align: center;
+  border: 1rem double red;
+  margin-inline: auto;
+  margin-block: 3rem 0;
+  max-width: 700px;
 }
 
 @supports (contain: inline-size) {
-	.warning {
-	  display: none;
-	}
+  .warning {
+    display: none;
   }
+}
