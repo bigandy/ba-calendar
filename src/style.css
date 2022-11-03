@@ -45,7 +45,7 @@ footer ba-calendar {
   max-width: 700px;
 }
 
-@supports (contain: inline-size) {
+@supports (container-type: inline-size) {
   .warning {
     display: none;
   }
