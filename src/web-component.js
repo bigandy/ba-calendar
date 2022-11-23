@@ -3,12 +3,12 @@ import { html, css, LitElement } from "lit";
 import "./style.css";
 
 /**
- * An example element.
+ * A ba-simple element.
  *
  * @slot - This element has a slot
  * @csspart button - The button
  */
-export class VHSimple extends LitElement {
+export class BASimple extends LitElement {
   static get styles() {
     return css`
       :host {
@@ -72,4 +72,4 @@ export class VHSimple extends LitElement {
   }
 }
 
-customElements.define("vh-simple", VHSimple);
+customElements.define("ba-simple", BASimple);
